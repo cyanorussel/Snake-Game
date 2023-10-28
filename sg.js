@@ -45,7 +45,7 @@ function update() {
     context.fillRect(foodX, foodY, blockSize, blockSize);
  
     if (snakeX == foodX && snakeY == foodY) {
-        snakeBody.push([foodX, foodY]);
+        snakeBody.push([foodX, foodY]);8
         placeFood();
     }
  
@@ -58,7 +58,7 @@ function update() {
         snakeBody[0] = [snakeX, snakeY];
     }
  
-    context.fillStyle = "white";
+    context.fillStyle = "grey";
     snakeX += speedX * blockSize; //updating Snake position in X coordinate.
     snakeY += speedY * blockSize;  //updating Snake position in Y coordinate.
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
