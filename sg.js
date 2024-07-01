@@ -4,8 +4,8 @@ var total_col = 17; //total column number
 var board;
 var context;
  
-var snakeX = blockSize * 5;
-var snakeY = blockSize * 5;
+var snakeX = blockSize * 2;
+var snakeY = blockSize * 2;
  
 // Set the total number of rows and columns
 var speedX = 0;  //speed of snake in x coordinate.
@@ -45,7 +45,7 @@ function update() {
     context.fillRect(foodX, foodY, blockSize, blockSize);
  
     if (snakeX == foodX && snakeY == foodY) {
-        snakeBody.push([foodX, foodY]);8
+        snakeBody.push([foodX, foodY]);
         placeFood();
     }
  
